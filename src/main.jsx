@@ -2,6 +2,9 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider, useNavigate } from 'react-router'
+import NotFoundPage from './components/not-found-page.jsx';
+import Post from './components/post.jsx';
+import PostIds from './components/post-ids.jsx';
 
 function HomeButtonPage() {
   const navigate = useNavigate();
@@ -22,6 +25,18 @@ const router = createBrowserRouter([
   {
     path: "/home",
     element: <App />
+  },
+  {
+    path: "*",
+    element: <NotFoundPage />
+  },
+  {
+    path: "/post",
+    element: <Post />
+  },
+  {
+    path: "/post/:id",
+    element: <PostIds />
   },
 ])
 

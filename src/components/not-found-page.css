@@ -1,0 +1,29 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.main-div {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-btn {
+    margin-top: 30px;
+    width: 300px;
+    font-size: 20px;
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 20px;
+    font-weight: 900;
+    cursor: pointer;
+}
